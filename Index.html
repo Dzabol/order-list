@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/index.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="order-container">
+      <header>
+        <div class="header-description">
+          <h1>Jimmy’s Diner</h1>
+          <h2>The best burgers and pizzas in town.</h2>
+        </div>
+      </header>
+      <main>
+        <section class="menu" id="menu">
+          <!-- DISPLAY MENU -->
+        </section>
+        <section class="ordered-container">
+          <!-- DISPLAY ORDER -->
+          <div class="order-list">
+            <div class="order-header">
+              <p>Your Order</p>
+            </div>
+
+            <div class="orderedItem-container">
+              <div class="orderedDish">
+                <p>2x Pizza</p>
+                <button class="remove-button">remove</button>
+              </div>
+
+              <p class="food-price">$20</p>
+            </div>
+            <hr />
+            <div class="totalPrice-container">
+              <p>Total Price</p>
+              <p class="food-price" id="totalPrice">$100</p>
+            </div>
+          </div>
+          <button class="orderButton">Complete order</button>
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
