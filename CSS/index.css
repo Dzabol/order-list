@@ -1,6 +1,6 @@
 @font-face {
   font-family: Smythe;
-  src: url("/CSS/Smythe-Regular.ttf");
+  src: url("./CSS/Smythe-Regular.ttf");
 }
 
 body {
@@ -195,7 +195,7 @@ main {
 
 header {
   height: auto;
-  background-image: url(/Images/logo.png);
+  background-image: url(./Images/logo.png);
   background-size: auto;
   background-repeat: no-repeat;
 }
