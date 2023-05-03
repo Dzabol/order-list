@@ -61,7 +61,7 @@ function renderMenu() {
     menuList += `
         <div class="food-container">
         <div class="dishes-container">
-          <img src="/Images/Menu/${dish.image}" class="dish-picture" alt="${dish.alt}"/>
+          <img src="./Images/Menu/${dish.image}" class="dish-picture" alt="${dish.alt}"/>
           <div class="food-description">
             <p class="food-name">${dish.name}</p>
             <p class="food-ingridientList">${prepareIngredients(dish)}</p>
