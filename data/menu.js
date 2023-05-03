@@ -6,6 +6,8 @@ export const menuArray = [
         image: "pizza-pic.png",
         alt: "slice of pizza",
         id: 0,
+        numberOfOrers: 0,
+        totalPrice: 0,
     },
     {
         name: "Hamburger",
@@ -13,7 +15,9 @@ export const menuArray = [
         price: 12,
         image: "hamburger-pic.png",
         alt: "one hamburger",
-        id: 1
+        id: 1,
+        numberOfOrers: 0,
+        totalPrice: 0,
     },
     {
         name: "Beer",
@@ -21,6 +25,8 @@ export const menuArray = [
         price: 12,
         image: "beer-pic.png",
         alt: "glass of beer",
-        id: 2
+        id: 2,
+        numberOfOrers: 0,
+        totalPrice: 0,
     }
 ]

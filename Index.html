@@ -29,30 +29,60 @@
         <section class="menu" id="menu">
           <!-- DISPLAY MENU -->
         </section>
-        <section class="ordered-container">
+        <!--After order-->
+        <div class="afterOrderWindow" id="afterOrderWindow"></div>
+        <section class="ordered-container hidden" id="ordered-container">
           <!-- DISPLAY ORDER -->
-          <div class="order-list">
-            <div class="order-header">
-              <p>Your Order</p>
-            </div>
-
-            <div class="orderedItem-container">
-              <div class="orderedDish">
-                <p>2x Pizza</p>
-                <button class="remove-button">remove</button>
-              </div>
-
-              <p class="food-price">$20</p>
-            </div>
-            <hr />
-            <div class="totalPrice-container">
-              <p>Total Price</p>
-              <p class="food-price" id="totalPrice">$100</p>
-            </div>
+          <div class="order-header">
+            <p>Your Order</p>
           </div>
-          <button class="orderButton">Complete order</button>
+          <div class="order-list" id="order-list">
+            <!--DISPLAY DISHES-->
+          </div>
+          <hr />
+          <div class="totalPrice-container">
+            <p>Total Price</p>
+            <p class="food-price" id="totalPrice"></p>
+          </div>
+          <button class="orderButton" id="orderButton">Complete order</button>
         </section>
       </main>
+      <!--ORDER WINDOW-->
+      <div class="orderForm-container" id="orderForm-container">
+        <div class="inputBox-container">
+          <button type="button" class="exit-button" id="exit-button">X</button>
+          <h1 class="orderBox-Title">Enter card details</h1>
+          <form class="formOrder-container" id="formOrder-container">
+            <input
+              type="text"
+              id="name-input"
+              name="orderingPerson"
+              class="form-inputBox capitalizeFirstLetters"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="number"
+              id="cardNumber-input"
+              name="cardNumber"
+              class="form-inputBox"
+              placeholder="Enter card number"
+              required
+            />
+            <input
+              type="text"
+              id="cvv-input"
+              name="cvv"
+              class="form-inputBox upperCasseText"
+              placeholder="Enter CVV"
+              required
+            />
+            <button type="submit" class="orderButton" id="submi-button">
+              Pay
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="./scripts/index.js" type="module"></script>
   </body>
